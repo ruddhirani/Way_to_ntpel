@@ -1,5 +1,5 @@
-# Friendly-Fortnight
-# TASK 1(A)
+# WAY TO NTPEL
+# 
 The Python script provided  that can be used to download MP3 lecture files from a given URL. It utilizes the yt_dlp library to download videos from YouTube, extracts the audio from the downloaded videos, and saves them as MP3 files. The script uses Selenium WebDriver to navigate to the course website, find the video links for each week and lesson, and then downloads the videos.
 
 <br />
@@ -23,7 +23,7 @@ for example
 python ntpel_download_lecture.py --course_url https://nptel.ac.in/courses/106106184 --driver_directory chromedriver --output_path input_audio
 ```
 
-# TASK 1(B)
+# 
 
 The code provided is a Python script that can be used to download PDF transcript files from a given URL. It utilizes Selenium WebDriver to navigate to the course website, click on the "Downloads" button, and then click on the "View Transcripts" button. It then retrieves the chapter names and PDF download links for each chapter, and downloads the PDF transcripts to a specified output folder.
 
@@ -45,7 +45,7 @@ for example
 ```python 
 python ntpel_download_transcript.py --course_url https://nptel.ac.in/courses/106106184 --driver_directory chromedriver --output_path output_pdf
 ```
-# TASK 2
+# 
 The provided code is a shell script that takes inputs from the user and converts MP3 audio files to WAV format with a 16KHz sampling rate and mono channel using the ffmpeg command. It also limits the number of parallel processes to a specified value (N) to control resource usage.
 <br /><br />
 The script expects three command-line arguments:
@@ -70,7 +70,7 @@ for example
 sudo bash audio_processor.sh input_audio output_audio 5
 ```
 
-# TASK 3
+# 
 The provided code is a Python script that extracts text from PDF files and saves them as preprocessed text files. It uses the PyPDF2 library to read and extract text from PDF files.
 
 The script expects two command-line arguments:
@@ -98,7 +98,7 @@ python pdfExplorer.py  --pdf_file_path output_pdf --output_file_path output
 ```
 
 
-# TASK 4
+# 
 
 The provided code is a Python script that splits audio files and generates a training manifest for speech recognition tasks. It takes as input the paths to directories containing audio files and PDF files, and outputs the split audio files along with corresponding durations and preprocessed text in a training manifest file.
 <br /><br /><br />The script defines several functions:
@@ -126,7 +126,7 @@ python speed_train.py --audio_file_path output_audio --pdf_file_path output_pdf 
 ```
 
 
-# TASK 5
+# 
 First clone the NeMO repository with the following command
 ```python
 git clone  https://github.com/NVIDIA/NeMo.git
