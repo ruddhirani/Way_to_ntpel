@@ -18,7 +18,7 @@ jobs:
           git config --global user.name "ruddhirani"
           git config --global user.email "nruddhi@gmail.com"
 
-      - name: Make a fake update
+      - name: Fixing Bug
         run: |
           echo "Green tick done" >> activity.log
           git add activity.log
