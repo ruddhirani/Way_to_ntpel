@@ -1,4 +1,5 @@
 name: run the ntpel
+
 on:
   schedule:
     - cron: '0 8 * * *' # every day at 8 AM UTC
@@ -21,5 +22,5 @@ jobs:
         run: |
           echo "Green tick done" >> activity.log
           git add activity.log
-          git commit -m "fixing bug"
-          git push
+          git commit -m "fixing bug" || echo "No changes to commit"
+          git push
